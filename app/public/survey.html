@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Page</title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+		<style>
+				body {
+					background-color: lightblue;
+				}
+				</style>
+	<div class="container">
+		<br>
+		<br>
+		<h2 class="bg-warning p-4">Survey Questions</h2>
+		<br>
+		<h3><strong>About You</strong></h3>
+		<form>
+			<div class="form-group">
+				<label for="friendName">Name</label>
+				<input type="text" class="form-control" id="friendName">
+			</div>
+			<div class="form-group">
+				<label for="friendPhoto">Link to Photo</label>
+				<input type="text" class="form-control" id="friendPhoto">
+			</div>
+			<hr>
+			<br>
+
+			<p>1.  I had a family dog growing up.</p>
+			<select class="custom-select mb-3" id= "question1">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>
+			<br>
+			<p>2.  Rescue dogs are awesome.</p>
+			<select class="custom-select mb-3" id= "question2">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>
+			<br>
+			<p>3.  Taking a walk is a valued activity in my life.</p>
+			<select class="custom-select mb-3" id= "question3">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>
+			<br>
+			<p>4.  I enjoy long hikes and picnics.</p>
+			<select class="custom-select mb-3" id= "question4">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>
+			<br>
+			<p>5.  I enjoy playing catch.</p>
+			<select class="custom-select mb-3" id= "question5">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>			
+			<br>
+			<p>6.  I have friends with dogs.</p>
+			<select class="custom-select mb-3" id= "question6">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>			
+			<br>
+			<p>7.  Recreational sports are a priority in my life.</p>
+			<select class="custom-select mb-3" id= "question7">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>			
+			<br>
+			<p>8.  I stay calm when I experience bad behavior.</p>
+			<select class="custom-select mb-3" id= "question8">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>			
+			<br>
+			<p>9.  I love when dogs sleep in my bed.</p>
+			<select class="custom-select mb-3" id= "question9">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>			
+			<br>
+			<p>10.  These are ridiculous questions.</p>
+			<select class="custom-select mb-3" id= "question10">
+				<option selected>Select on Option</option>
+				<option value="1">1 Strongly Disagree</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 Strongly Agree</option>
+			</select>
+			<br>
+
+			<button type="button" class="btn btn-warning btn-lg btn-block submit" data-toggle="modal" data-target="#matchModal"><i class="far fa-check-circle"></i> Submit</button>
+		</form>
+	</div>
+
+
+	<div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"><i class="fas fa-users"></i> Best Match</h5>
+			
+				</div>
+				<div class="modal-body">
+			
+					<h3 id=matchContentName></h3>
+					<div id=matchContentPhoto></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary dumpdata" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<hr>
+			<p><a href="/api/friends"target="_blank">API Friends List</a> | <a href="https://github.com/raggbull/Dog-Finder" target="_blank">GitHub Repo</a></p>
+		</div>
+	</footer>
+
+
+</body>
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+	console.log("SCRIPT RUNNING");
+
+
+
+    $(".submit").on("click", function(event) {
+    	event.preventDefault();
+    	console.log("Button Clicked");
+
+    	scoreArray=[];
+    	for (var i=1; i<11; i++) {
+    		var selectedAnswer = $("#question"+i).val();
+    		selectedAnswer=parseInt(selectedAnswer);
+    		scoreArray.push(selectedAnswer);
+    	};
+    	console.log(scoreArray);
+
+      var newFriend = {
+      	friendName: $("#friendName").val().trim(),
+      	friendPhoto: $("#friendPhoto").val().trim(),
+      	friendScore: JSON.stringify(scoreArray)
+      };
+
+      console.log(newFriend);
+
+
+
+
+
+      $.post("/api/friends", newFriend,
+      	function(data) {
+      		console.log("XXXXXXXXXXXXXXXXXXXXX");
+      		console.log(data);
+      		$("#matchContentName").append(data.friendName);
+      		$("#matchContentPhoto").append("<img src = '" + data.friendPhoto  + "' height = '200'>");
+
+
+
+          $("#friendName").val("");
+          $("#friendPhoto").val("");
+          for (var i=1; i<11; i++) {
+          	$("#question"+i).val("");
+          };
+
+      });
+
+  });
+
+
+
+
+
+
+</script>
