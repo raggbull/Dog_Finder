@@ -1,6 +1,6 @@
 # Dog_Finder
 
-**Find your four legged friend here:  https://blooming-thicket-97258.herokuapp.com/ **
+Find your four legged friend here:  https://blooming-thicket-97258.herokuapp.com/ 
 
 
 **Overview**
