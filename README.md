@@ -11,3 +11,4 @@ In this activity, you'll build a compatibility-based "FriendFinder" application 
 <img width="1019" alt="screen shot 2018-08-06 at 9 31 12 pm" src="https://user-images.githubusercontent.com/19920193/43751110-1a5d1aec-99c1-11e8-93a6-9e4ba705fae8.png">
 
 
+<img width="1108" alt="screen shot 2018-08-06 at 9 30 51 pm" src="https://user-images.githubusercontent.com/19920193/43751135-41a4dd2e-99c1-11e8-9446-90c027c4901a.png">
